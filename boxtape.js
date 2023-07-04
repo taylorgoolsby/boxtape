@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { test } from 'tape'
+import test from 'tape'
 
 function augment() {
   let beforeEach
@@ -9,11 +9,11 @@ function augment() {
   function newTest(name, fn) {
     test(name, async (t) => {
       if (beforeEach) {
-        await beforeEach()
+        await beforeEach(t)
       }
       await fn(t)
       if (afterEach) {
-        await afterEach()
+        await afterEach(t)
       }
     })
   }

@@ -13,7 +13,7 @@
   "bin": {
     "boxtape": "./cli.js"
   },
-  "main": "./boxtape.js",
+  "main": "boxtape.js",
   "types": "./boxtape.d.ts",
   "exports": {
     ".": "./boxtape.js",
@@ -26,7 +26,6 @@
     "boxtape.d.ts"
   ],
   "scripts": {
-    "build": "node build.js",
     "test": "node cli.js tests/**/*.test.js",
     "prepublishOnly": "npm run build && npm run test"
   },

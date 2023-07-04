@@ -7,11 +7,18 @@ This is just regular tape, but with some quality of life improvements.
 See [tape](https://www.npmjs.com/package/tape).
 
 ```shell
+npm install boxtape
+
+# If you use typescript:
+npm install @types/tape
+```
+
+```shell
 boxtape tests/**/*.js
 ```
 
 ```js
-import test from 'boxtape'
+import test from 'boxtape.js'
 ```
 
 ## Additions
@@ -19,7 +26,7 @@ import test from 'boxtape'
 ### `beforeEach`
 
 ```js
-import test from 'boxtape'
+import test from 'boxtape.js'
 
 test.beforeEach(async (t) => {
   // Do something before each test.
@@ -29,7 +36,7 @@ test.beforeEach(async (t) => {
 ### `afterEach`
 
 ```js
-import test from 'boxtape'
+import test from 'boxtape.js'
 
 test.afterEach(async (t) => {
   // Do something after each test.
@@ -52,7 +59,7 @@ Here is a simple example to get you started for frontend testing.
 
 ```js
 // In this example, we are doing some frontend testing.
-import test from 'boxtape'
+import test from 'boxtape.js'
 import sinon from 'sinon'
 import {JSDOM} from 'jsdom'
 
