@@ -1,6 +1,6 @@
 # 📦 boxtape
 
-This is just regular tape, but with some quality of life improvements.
+This is just regular tape, but with some quality of life improvements for the ESM era.
 
 ## Usage
 
