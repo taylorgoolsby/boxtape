@@ -1,0 +1,35 @@
+{
+  "name": "boxtape",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "git@github.com:taylrun/boxtape.git",
+  "author": "Taylor Goolsby <14286600+taylrun@users.noreply.github.com>",
+  "description": "Tape with defaults",
+  "keywords": [
+    "tape",
+    "testing",
+    "tap"
+  ],
+  "bin": {
+    "boxtape": "./cli.js"
+  },
+  "exports": {
+    ".": "./boxtape.js"
+  },
+  "type": "module",
+  "files": [
+    "cli.js",
+    "boxtape.js"
+  ],
+  "scripts": {
+    "test": "boxtape.js tests/**/*.test.js"
+  },
+  "dependencies": {
+    "tap-pretty-with-errors": "^0.0.7",
+    "tape": "^5.6.4"
+  },
+  "devDependencies": {
+    "sinon": "^15.2.0"
+  }
+}
