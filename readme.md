@@ -26,7 +26,7 @@ import test from 'boxtape'
 ### `beforeEach`
 
 ```js
-import test from 'boxtape.js'
+import test from 'boxtape'
 
 test.beforeEach(async (t) => {
   // Do something before each test.
@@ -36,7 +36,7 @@ test.beforeEach(async (t) => {
 ### `afterEach`
 
 ```js
-import test from 'boxtape.js'
+import test from 'boxtape'
 
 test.afterEach(async (t) => {
   // Do something after each test.
