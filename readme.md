@@ -59,7 +59,7 @@ Here is a simple example to get you started for frontend testing.
 
 ```js
 // In this example, we are doing some frontend testing.
-import test from 'boxtape.js'
+import test from 'boxtape'
 import sinon from 'sinon'
 import {JSDOM} from 'jsdom'
 
