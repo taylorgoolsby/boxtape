@@ -43,6 +43,8 @@ This uses a fork of [`tap-pretty`](https://www.npmjs.com/package/tap-pretty) to 
 
 ![error example](./images/error.png)
 
+Since `boxtape` automatically pipes `tape` output into `tap-pretty`, you cannot pipe into your own tap formatter. 
+
 ## Examples
 
 ### Frontend Testing 
