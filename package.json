@@ -27,7 +27,7 @@
   ],
   "scripts": {
     "test": "node cli.js tests/**/*.test.js",
-    "prepublishOnly": "npm run build && npm run test"
+    "prepublishOnly": "npm run test"
   },
   "dependencies": {
     "tap-pretty-with-errors": "^0.0.7",
