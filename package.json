@@ -22,7 +22,8 @@
   "type": "module",
   "files": [
     "cli.js",
-    "boxtape.js"
+    "boxtape.js",
+    "boxtape.d.ts"
   ],
   "scripts": {
     "build": "node build.js",
