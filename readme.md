@@ -18,7 +18,7 @@ boxtape tests/**/*.js
 ```
 
 ```js
-import test from 'boxtape.js'
+import test from 'boxtape'
 ```
 
 ## Additions
