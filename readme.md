@@ -2,6 +2,18 @@
 
 This is just regular tape, but with some quality of life improvements.
 
+## Usage
+
+See [tape](https://www.npmjs.com/package/tape).
+
+```shell
+boxtape tests/**/*.js
+```
+
+```js
+import test from 'boxtape'
+```
+
 ## Additions
 
 ### `beforeEach`
