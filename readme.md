@@ -19,7 +19,6 @@ import test from 'boxtape'
 ### `beforeEach`
 
 ```js
-// In this example, we are doing some frontend testing.
 import test from 'boxtape'
 
 test.beforeEach(async (t) => {
