@@ -14,6 +14,7 @@
     "boxtape": "./cli.js"
   },
   "main": "./boxtape.js",
+  "types": "./boxtape.d.ts",
   "exports": {
     ".": "./boxtape.js",
     "./package.json": "./package.json"
@@ -24,14 +25,16 @@
     "boxtape.js"
   ],
   "scripts": {
+    "build": "node build.js",
     "test": "node cli.js tests/**/*.test.js",
-    "prepublish": "npm run test"
+    "prepublishOnly": "npm run build && npm run test"
   },
   "dependencies": {
     "tap-pretty-with-errors": "^0.0.7",
     "tape": "^5.6.4"
   },
   "devDependencies": {
+    "@types/tape": "^5.6.0",
     "sinon": "^15.2.0"
   }
 }
