@@ -23,7 +23,8 @@
     "boxtape.js"
   ],
   "scripts": {
-    "test": "boxtape.js tests/**/*.test.js"
+    "test": "node cli.js tests/**/*.test.js",
+    "prepublish": "npm run test"
   },
   "dependencies": {
     "tap-pretty-with-errors": "^0.0.7",

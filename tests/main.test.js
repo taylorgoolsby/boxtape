@@ -1,24 +1,26 @@
 import test from '../boxtape.js'
 import sinon from 'sinon'
 
-const spy = sinon.spy()
+const beforeEachSpy = sinon.spy()
+const afterEachSpy = sinon.spy()
 
 test.beforeEach(async (t) => {
-  spy()
+  beforeEachSpy()
 })
 
 test.afterEach(async (t) => {
-  spy()
+  afterEachSpy()
 })
 
 test('run 1', async (t) => {
-  t.ok()
+  t.end()
 })
 
 test('run 2', async (t) => {
-  t.ok()
+  t.end()
 })
 
 test('run final', async (t) => {
-  console.log('spy.callCount', spy.callCount)
+  t.equal(beforeEachSpy.callCount, 3, 'beforeEach callCount')
+  t.equal(afterEachSpy.callCount, 2, 'afterEach callCount')
 })
