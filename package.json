@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "git@github.com:taylrun/boxtape.git",
   "author": "Taylor Goolsby <14286600+taylrun@users.noreply.github.com>",
-  "description": "Tape with defaults",
+  "description": "A tape testing framework with defaults",
   "keywords": [
     "tape",
     "testing",

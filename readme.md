@@ -29,7 +29,7 @@ test.afterEach(async (t) => {
 
 This uses a fork of [`tap-pretty`](https://www.npmjs.com/package/tap-pretty) to provide a nice output by default. The fork has added error stack trace so that you can navigate to where the error occurred.
 
-![error example](/images/error.png)
+![error example](./images/error.png)
 
 ## Examples
 
