@@ -49,7 +49,7 @@ Since `boxtape` automatically pipes `tape` output into `tap-pretty`, you cannot 
 
 ### Frontend Testing 
 
-Here is a simple example to get your started for frontend testing.
+Here is a simple example to get you started for frontend testing.
 
 ```js
 // In this example, we are doing some frontend testing.
