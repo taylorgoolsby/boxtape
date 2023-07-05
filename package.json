@@ -28,7 +28,7 @@
   "scripts": {
     "test": "node cli.js tests/main.test.js && echo 'pass'",
     "test-fail": "node cli.js tests/fail.test.js && echo 'pass'",
-    "prepublishOnly": "npm run test-fail"
+    "prepublishOnly": "npm run test"
   },
   "dependencies": {
     "tap-pretty-with-errors": "^0.0.7",
