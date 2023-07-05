@@ -26,8 +26,9 @@
     "boxtape.d.ts"
   ],
   "scripts": {
-    "test": "node cli.js tests/**/*.test.js",
-    "prepublishOnly": "npm run test"
+    "test": "node cli.js tests/main.test.js && echo 'pass'",
+    "test-fail": "node cli.js tests/fail.test.js && echo 'pass'",
+    "prepublishOnly": "npm run test-fail"
   },
   "dependencies": {
     "tap-pretty-with-errors": "^0.0.7",
