@@ -11,7 +11,7 @@ console.log('process.cwd()', process.cwd())
 
 const tapeArgs = process.argv.slice(2)
 const binPath = path.resolve(__dirname, 'node_modules', '.bin')
-const newPath = process.env.PATH + ':' + binPath
+const newPath = binPath + ":" + process.env.PATH
 console.log('newPath', newPath)
 
 try {
